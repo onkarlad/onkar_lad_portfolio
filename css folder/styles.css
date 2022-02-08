@@ -1,0 +1,574 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+        width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+}
+
+::selection{
+    background-color: rgb(255, 166, 0);
+    color: black;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+/* 
+======================
+    NAVBAR SECTION
+======================
+*/
+
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: unset;
+}
+
+
+
+.navbar{
+    position: fixed;
+    padding-left: 1.575rem;  
+   padding-top: 1.575rem;
+   padding-bottom: 1.575rem;
+   width: 100%;
+   z-index:1000;
+   
+}
+.navbar-brand{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 0.475rem .985rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:700;
+    border-radius: 6px;
+    border:3px solid orange;  
+    animation: name 4s linear infinite; 
+    -webkit-animation:name 4s linear infinite; 
+    -o-animation:name 4s linear infinite; 
+    -moz-animation:name 4s linear infinite; 
+}
+.navbar-brand:hover{
+    color: orange;
+}
+@keyframes name{
+    0%{
+        border-color:orange;
+        color: cyan;
+    }
+    20%{
+        border-color:white;
+        color: orange;
+    }
+    40%{
+        border-color:yellow;
+        color: red;
+    }
+    60%{
+        border-color:red;
+        color: yellow;
+       }
+    80%{
+        border-color:cyan;
+        color:white;
+    }
+    100%{
+        border-color:orange;
+    }
+}
+.navbar .nav-item{
+    padding-right: 1.275rem;
+    
+}
+
+.navbar .nav-item .nav-link{
+   color:#fff;
+    font-weight: 600;
+    padding:0.874rem 1rem;
+    transition: all .4s linear;
+}
+.navbar .nav-item .nav-link:hover{
+    color: orange;
+   
+}
+ .navbar-nav .show > .nav-link,
+ .navbar-nav .nav-link.active {
+    color: orange;
+  }
+ .navigation-wrap .main_btn{
+    display: inline-block;
+    padding: 0.675rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: orange;
+    border: 0.1875rem solid orange;
+    border-radius: 10px;
+    color:black;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0/19%);
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition:all .2s ease-in;
+    margin: left 1.500rem;
+    
+}
+.navigation-wrap .main_btn:hover{
+    background-color: transparent;
+    color:rgb(255, 255, 255);
+    border-color: orange;
+}
+.navigation-wrap .main_btn:active{
+    transform: translateY(3px);
+    box-shadow: 0 3px 5px 2px rgba(0,0,0,0.6) ;
+}
+.navbar.navigation-wrap.scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color: black;
+    box-shadow: 0 0.625rem 0.9375rem 0 rgba(150, 145, 145, 0.219);
+    transition: all .15s ease-in-out 0s;
+    -webkit-transition:  all .15s ease-in-out 0s;
+    -o-transition:  all .15s ease-in-out 0s;
+    -moz-transition:  all .15s ease-in-out 0s;
+}
+
+
+
+/* 
+======================
+  TOP BANNER SECTION
+======================
+*/
+
+.top_banner{
+    position: relative;
+    top: 0%;
+    left: 0%; 
+    background-image: url("../images/bg/1641698748246.jpg") ;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 11rem 3rem 8rem; 
+}
+
+
+.text_content h2{
+    font-size: 5rem;
+    color: whitesmoke ;
+}
+.text_content h5{
+    letter-spacing: 1px;
+}
+.text_content p{
+    letter-spacing: 1px;
+}
+
+.top_banner .download_btn{
+    padding: 1rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: orange;
+    border: 0.1875rem solid orange;
+    border-radius: 10px;
+    color:black;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0/19%);
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition:all .2s ease-in;
+}
+
+.top_banner .download_btn:hover{
+    background-color: transparent;
+    color:rgb(255, 255, 255);
+    border-color: orange;
+}
+
+
+
+
+
+/* 
+======================
+    ABOUT SECTION
+======================
+*/
+
+.about{
+    object-fit: cover;
+    background-color: black; 
+    padding-bottom: 4rem;
+}
+
+.about .about_header{
+    padding-top: 3rem;
+    font-size: 2.575rem;
+    color: orange;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #14131d;
+}
+
+.about .about_text p{
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    padding-top: 1.875rem;
+    line-height: 1.7;
+    color: green;  
+}
+.about .connect{
+    margin-top: 0.875rem;
+}
+
+.about .connect .connect_btn{
+    padding: 0.875rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: orange;
+    border: 0.1875rem solid orange;
+    border-radius: 10px;
+    color:black;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0/19%);
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition:all .2s ease-in; 
+}
+
+.about .connect .connect_btn:hover{
+    background-color: transparent;
+    color:rgb(255, 255, 255);
+    border-color: orange;
+}
+
+
+
+/* 
+======================
+    skill SECTION
+======================
+*/
+
+.skil_section{
+    background-color: rgb(24, 22, 22);
+}
+.skil_section .skill_header{
+    font-size: 2.575rem;
+    color: orange;
+    font-weight: 600;
+}
+.progress_bar{
+    padding: 25px 30px;
+    width: 100%;
+    color: white;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.6);
+}
+
+.progress_bar .bar{
+    margin: 30px 0;
+}
+.progress_bar .bar:first-child{
+    margin-top: 0px;
+}
+
+
+.progress_bar .bar .subject{
+    margin-bottom: 5px;
+}
+
+.progress_bar .bar .subject span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showtext 0.5s 1s linear forwards;
+}
+
+
+@keyframes showtext{
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.progress_bar .bar .bar_line{
+    height: 2px;
+    width: 100%;
+    background-color: #353b48;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #2187e7;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+
+.bar .bar_line span{
+    height: 2px;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: #2187e7;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.bar .html span{
+    width: 90%;
+}
+
+.bar .css span{
+    width: 85%;
+}
+
+.bar .bootstrap span{
+    width: 80%;
+}
+
+.bar .javascript span{
+    width: 70%;
+}
+
+.bar .react_js span{
+    width: 80%;
+}
+
+.bar_line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0px;
+    height: 0px;
+    width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showtext2 0.5s 1.5s linear forwards;
+}
+
+.bar_line span::after{
+position: absolute;
+top: -28px;
+right: 0px;
+font-weight: 500;
+color: #fff;
+padding: 1px 8px;
+font-size: 12px;
+border-radius: 3px;
+opacity: 0;
+animation: showtext2 0.5s 1.5s linear forwards;
+
+}
+
+
+@keyframes showtext2{
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.html span::after{
+    content: "90%";
+}
+
+.css span::after{
+    content: "85%";
+}
+
+.bootstrap span::after{
+    content: "80%";
+}
+
+.javascript span::after{
+    content: "75%";
+}
+
+.react_js span::after{
+    content: "80%";
+}
+
+
+
+
+
+/* 
+======================
+  projects SECTION
+======================
+*/
+.project{
+    background-image: url("../images/1641698748227.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+.project .project_header{
+    font-size: 2.575rem;
+    color: orange;
+    font-weight: 600;
+}
+
+.project .card{
+    background-color: transparent;
+    border: unset;
+    outline: unset;
+}
+
+.project .card img{
+    border-radius: 8px;
+}
+
+.project .card p{
+    color: orange;
+    font-weight: 600;
+    font-size: 1.575rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.project .card .project_img2{
+    object-fit: cover;
+    height: 16.500rem;
+}
+
+.project .card .project_img3{
+    object-fit: cover;
+    height: 16.400rem;
+}
+
+
+
+
+
+
+
+
+/* 
+======================
+    contact SECTION
+======================
+*/
+
+
+.contact .contact_header{
+    font-size: 2.575rem;
+    color: orange;
+    font-weight: 600;
+}
+
+.contact .card{
+    border-radius: 10px;
+   background-color: rgb(245, 245, 245);
+}
+
+
+.card .phone{
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+    border-radius: 2.7rem;
+}
+
+
+
+
+.card .phone_no{
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+.card .email{
+    font-weight: 600;
+    font-size: 1.523rem;
+}
+
+.card .email a{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+
+
+
+
+/* 
+======================
+    footer SECTION
+======================
+*/
+
+.footer .sect a{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: black;
+    font-weight: 800;
+    font-size: 1.375rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer .follow{
+    color: black;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+
+}
+
+.footer .social_link a{
+    font-size: 1.575rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: black;
+}
+
+.footer .copyright{
+    margin-top: 1rem;
+    color: black;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    opacity: 0.9;
+    word-spacing: 2px;
+}

@@ -1,0 +1,109 @@
+/* @media 1199px */
+@media(max-width:1199px){
+    .card .email{
+        font-size: 1.823rem;
+        margin-right: auto;
+    }
+    
+    .card .phone_no{
+       font-size:1.823rem ;
+       margin-right: auto;
+    }
+
+    .project .card .project_img2{
+        height: 13.800rem;
+    }
+    
+    .project .card .project_img3{
+        height: 13.700rem;
+    }
+}
+
+
+
+/* @media 991px */
+@media (max-width:991px){
+    .navigation-wrap{
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+    }
+
+        .navigation-wrap .nav-link{
+            color:white;
+            font-size: 20px;
+           
+        }
+        .navbar .nav-item .nav-link:hover{
+            color: orange;
+           background-color: unset;
+           
+        }
+     .navbar-toggler-icon{
+         color: white;
+         
+     }
+
+
+     .project .card .project_img2{
+        height: 10.300rem;
+    }
+    
+    .project .card .project_img3{
+        height: 10.200rem;
+    }
+
+}
+
+
+
+
+
+/* @media 767px */
+@media(max-width:767px){
+
+    .text_content h2{
+        font-size: 4.175rem;
+        color: whitesmoke ;
+    }
+
+    .project .card .project_img2{
+        height: 20rem;
+    }
+    
+    .project .card .project_img3{
+        height: 19.900rem;
+    }
+
+  
+}
+
+
+
+
+
+
+
+/* @media 365px */
+@media (max-width:365px){
+    .top_banner{
+        padding: 9rem 0rem 6rem;
+    }
+
+    .top_banner .download_btn{
+        padding: .875rem;
+        font-size: 0.690rem;
+        line-height: 1rem; 
+    }
+   
+    .card .email{
+        font-size: 1.275rem;
+        margin-right: auto;
+    }
+    
+    .card .phone_no{
+       font-size:1.275rem ;
+       margin-right: auto;
+    }
+
+   
+}
